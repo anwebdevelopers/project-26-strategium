@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Strategium</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+	<style>#preloader{position:fixed;left:0;top:0;bottom:0;right:0;z-index:100;background-color:#000;}#preloader__img{position:fixed;z-index:101;top:50%;left:50%;transform:translate(-50%,-50%);}</style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load CSS Start -->
+	<script>loadLocalStorageCSS( "webfonts", "/css/fonts.min.css?ver=1.0.0" );</script>
+	<!-- <script>loadCSS( "/css/header.min.css?ver=1.0.0", false, "all" );</script> -->
+	<script>loadCSS( "/css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load CSS End -->
+
+	<!-- Load CSS Compilled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+
+	<!--[if (lte IE 9)]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<script src="js/placeholders.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/ie9style.min.css">
+	<![endif]-->
+</head>
+
+<body>
+
+	<div id="preloader">
+		<div id="preloader__img">
+			<img src="img/logo.png" alt="#">
+		</div>
+	</div>
+
+	<header class="header">
+		<div class="header__topline">
+			<div class="header__topline-box">
+				<div class="header__logo">
+					<a href="index.html">
+						<img src="img/logo.png" alt="">
+					</a>
+				</div>
+
+				<button class="header__search-button"><i class="icon-search"></i></button>
+				<button class="header__nav-button"><i class="icon-menu"></i></button>
+
+			</div>
+			<div class="header__wrapper">
+				<nav class="header__nav">
+					<ul>
+						<li><a class="active">События</a></li>
+						<li><a href="company.html">Компания</a></li>
+						<li><a href="news.html">Новости</a></li>
+						<li><a href="reviews.html">Отзывы</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="header__search">
+					<form class="header__search-form">
+						<input type="text">
+						<button type="submit">Искать</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="header__slider owl-carousel">
+			<div class="header__slider-item">
+				<div class="header__slider-item-img" style="background-image: url(img/header-slider-img1.jpg);"></div>
+				<div class="header__wrapper">
+					<div class="header__slider-title">
+						<h1>НАШИ <span>СОБЫТИЯ</span></h1>
+					</div>
+					<div class="header__slider-undertitle">
+						<h3>Главные отраслевые бизнес-мероприятия</h3>
+					</div>
+					<div class="header__slider-button btn btn_white_color">
+						<a href="events.html"><span>ПОДРОБНЕЕ</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="header__slider-item">
+				<div class="header__slider-item-img" style="background-image: url(img/header-slider-img2.jpg);"></div>
+				<div class="header__wrapper">
+					<div class="header__slider-title">
+						<h1>НАШИ <span>НОВОСТИ</span></h1>
+					</div>
+					<div class="header__slider-undertitle">
+						<h3>Самые актуальные новости компании и наших мероприятий</h3>
+					</div>
+					<div class="header__slider-button btn btn_white_color">
+						<a href="news.html"><span>ПОДРОБНЕЕ</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="header__slider-item">
+				<div class="header__slider-item-img" style="background-image: url(img/header-slider-img3.jpg);"></div>
+				<div class="header__wrapper">
+					<div class="header__slider-title">
+						<h1>НАШИ <span>ОТЗЫВЫ</span></h1>
+					</div>
+					<div class="header__slider-undertitle">
+						<h3>Отзывы партнеров и участников наших бизнес-мероприятий</h3>
+					</div>
+					<div class="header__slider-button btn btn_white_color">
+						<a href="reviews.html"><span>ПОДРОБНЕЕ</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="header__slider-item">
+				<div class="header__slider-item-img" style="background-image: url(img/header-slider-img4.jpg);"></div>
+				<div class="header__wrapper">
+					<div class="header__slider-title">
+						<h1>НАША <span>КОМПАНИЯ</span></h1>
+					</div>
+					<div class="header__slider-undertitle">
+						<h3>Одна из ведущих организаторов международных деловых мероприятий</h3>
+					</div>
+					<div class="header__slider-button btn btn_white_color">
+						<a href="company.html"><span>ПОДРОБНЕЕ</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="header__slider-item">
+				<div class="header__slider-item-img" style="background-image: url(img/header-slider-img5.jpg);"></div>
+				<div class="header__wrapper">
+					<div class="header__slider-title">
+						<h1>НАШИ <span>КОНТАКТЫ</span></h1>
+					</div>
+					<div class="header__slider-undertitle">
+						<h3>Давайте будем на связи?</h3>
+					</div>
+					<div class="header__slider-button btn btn_white_color">
+						<a href="#"><span>ПОДРОБНЕЕ</span></a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</header>
+
+
+	<section class="events sect_with_dark_bg">
+		<div class="events__wrapper">
+			<div class="events__box">
+				<div class="events__item">
+					<div class="events__dateplace-box">
+						<div class="events__date">
+							<span>09.11.2016</span>
+						</div>
+						<div class="events__place">
+							<span>москва</span>
+						</div>
+					</div>
+					<div class="events__title-box">
+						<a href="#">
+							<div class="events__img">
+								<img src="img/events-img1.png" alt="">
+							</div>
+							<div class="events__title">
+								<h2>RUSSIAN MOTORSPORT FORUM</h2>
+							</div>
+							<div class="events__undertitle">
+								<h3>Главное международное деловое событие, посвященное авто и мотоспорту в России</h3>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="events__item">
+					<div class="events__dateplace-box">
+						<div class="events__date">
+							<span>29.11.2016</span>
+						</div>
+						<div class="events__place">
+							<span>москва</span>
+						</div>
+					</div>
+					<div class="events__title-box">
+						<a href="#">
+							<div class="events__img">
+								<img src="img/events-img2.png" alt="">
+							</div>
+							<div class="events__title">
+								<h2>конференция СЕЛЕБРИТИ–МАРКЕТИНГ</h2>
+							</div>
+							<div class="events__undertitle">
+								<h3>Первая международная конференция по селебрити-маркетингу в России</h3>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="events__item">
+					<div class="events__dateplace-box">
+						<div class="events__date">
+							<span>29.11.2016</span>
+						</div>
+						<div class="events__place">
+							<span>москва</span>
+						</div>
+					</div>
+					<div class="events__title-box">
+						<a href="#">
+							<div class="events__img">
+								<img src="img/events-img3.png" alt="">
+							</div>
+							<div class="events__title">
+								<h2>russian sponsorship forum</h2>
+							</div>
+							<div class="events__undertitle">
+								<h3>Главное в России международное деловое событие о спонсорстве</h3>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="events__item">
+					<div class="events__dateplace-box">
+						<div class="events__date">
+							<span>26.04.2017</span>
+						</div>
+						<div class="events__place">
+							<span>москва</span>
+						</div>
+					</div>
+					<div class="events__title-box">
+						<a href="#">
+							<div class="events__img">
+								<img src="img/events-img4.png" alt="">
+							</div>
+							<div class="events__title">
+								<h2>КОНФЕРЕНЦИЯ MARSPO</h2>
+							</div>
+							<div class="events__undertitle">
+								<h3>Маркетинг спортивных федераций, лиг, клубов и турниров</h3>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__top-line">
+			<div class="footer__top-line-wrapper">
+				<div class="footer__top-line-text">
+					<p>Будьте на связи - подпишитесь на рассылку</p>
+				</div>
+				<div class="footer__top-line-button btn btn_red">
+					<a href="#"><span>подписаться</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer__wrapper">
+			<div class="footer__social">
+				<div class="footer__logo">
+					<img src="img/logo.png" alt="">
+				</div>
+				<div class="footer__social-box">
+					<a href="#" class="footer__social-item"><i class="icon-vkontakte"></i></a>
+					<a href="#" class="footer__social-item"><i class="icon-facebook"></i></a>
+					<a href="#" class="footer__social-item"><i class="icon-twitter"></i></a>
+				</div>
+				<div class="footer__copy">
+					<span>2016 ©  Все права защищены</span>
+				</div>
+			</div>
+			<div class="footer__about">
+				<div class="footer__about-title">
+					<span>Кто мы такие</span>
+				</div>
+				<div class="footer__about-text">
+					<p>Короткое описание коммуникационной группы, буквально - три предложения о том, кто такие и что делаем.</p>
+				</div>
+			</div>
+			<div class="footer__events">
+				<div class="footer__events-title">
+					<span>Последние события</span>
+				</div>
+				<ul class="footer__events-list">
+					<li><a href="#">Russian Sponsorship Forum</a></li>
+					<li><a href="#">Russian Motorsport Forum</a></li>
+					<li><a href="#">Celebrity-Marketing</a></li>
+					<li><a href="#">MarSpo</a></li>
+
+				</ul>
+			</div>
+			<div class="footer__news">
+				<div class="footer__news-title">
+					<span>Последние новости</span>
+				</div>
+				<a href="#" class="footer__news-item">
+					<div class="footer__news-item-name"><span>Грузия примет MarSpo</span></div>
+					<div class="footer__news-item-date"><span>20 июля 2016</span></div>
+				</a>
+				<a href="#" class="footer__news-item">
+					<div class="footer__news-item-name"><span>Мельдоневый скандал</span></div>
+					<div class="footer__news-item-date"><span>17 июля 2016</span></div>
+				</a>
+				<a href="#" class="footer__news-item">
+					<div class="footer__news-item-name"><span>Russian Sponsorship Aword</span></div>
+					<div class="footer__news-item-date"><span>15 июля 2016</span></div>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Load Scripts End -->
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+.our-speakers {
+    padding: 100px 0 140px 0;
+}
+.our-speakers__wrapper {
+    position: relative;
+    z-index: 1;
+    @extend .container;
+}
+.our-speakers__box {
+	font-size: 0;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.our-speakers__item {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	width: 20%;
+	&:hover, &:active {
+        .our-speakers__item-img {
+            img {
+                transform: scale(1.2);
+            }
+        }
+		.our-speakers__item-text {
+			display: block;
+			transform: scale(1);
+            opacity: 1;
+		}
+	}
+}
+.our-speakers__item-img {
+    overflow: hidden;
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+        transition: all 1s ease;
+	}
+}
+.our-speakers__item-text {
+
+	position: absolute;
+	z-index: 1;
+	left: 5%;
+	top: 5%;
+	right: 5%;
+	bottom: 5%;
+	background-color: transparentize($main-color, .1);
+	transform: scale(0);
+    opacity: 0;
+	transition: all .5s ease;
+	overflow: hidden;
+}
+.our-speakers__item-text-inner {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	right: 10%;
+	transform: translateY(-50%);
+}
+.our-speakers__item-name {
+    margin: 0 0 5px 0;
+	font-size: 30px;
+	font-weight: 300;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1;
+	font-family: 'Bebas Neue';
+    font-weight: 500;
+}
+.our-speakers__item-position {
+	margin: 5px 0 0 0;
+	font-size: 14px;
+	color: #000;
+	font-style: italic;
+	text-align: center;
+	line-height: 1.2;
+}
+
+
+.our-speakers__advantages {
+    margin: 140px 0 0 0;
+    font-size: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+.our-speakers__advantages-item {
+    // flex-grow: 1;
+    // flex-shrink: 1;
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    padding: 0 20px;
+    margin: 0 0 40px 0;
+    text-align: left;
+}
+.our-speakers__advantages-item:nth-child(2) {
+    .our-speakers__advantages-item-title {
+        animation-delay: .3s;
+    }
+}
+.our-speakers__advantages-item:nth-child(3) {
+    .our-speakers__advantages-item-title {
+        animation-delay: .6s;
+    }
+}
+.our-speakers__advantages-item:nth-child(4) {
+    .our-speakers__advantages-item-title {
+        animation-delay: .9s;
+    }
+}
+.our-speakers__advantages-item-title {
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+    small {
+    	display: inline-block;
+    	vertical-align: bottom;
+        font-size: 30px;
+        color: #fff;
+        font-family: 'Bebas Neue';
+        font-weight: 600;
+        line-height: 1;
+    }
+    b {
+    	display: inline-block;
+    	vertical-align: bottom;
+    	margin: 0 5px 0 0;
+        font-size: 70px;
+        color: $main-color;
+        font-family: 'Open Sans';
+        font-weight: 800;
+        line-height: 1;
+        text-transform: uppercase;
+
+    }
+}
+.our-speakers__advantages-item-text {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    color: $utc;
+    line-height: 1.8;
+    p {
+        margin: 0;
+    }
+}
+
+// .our-speakers__item-social {
+//     position: absolute;
+//     bottom: 5%;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     font-size: 16px;
+//     white-space: nowrap;
+//     a {
+//         display: inline-block;
+//         vertical-align: middle;
+//         width: 24px;
+//         height: 24px;
+//         text-align: center;
+//         line-height: 24px;
+//         margin: 0 3px;
+//         text-decoration: none;
+//         color: #111;
+//         border-radius: 50%;
+//         font-weight: 600;
+//         transition: color .5s ease;
+//         &:hover, &:active, &:focus {
+//     		color: #fff;
+//             animation-name: social-our-speakers;
+//             animation-duration: .3s;
+//     	}
+//     }
+// }
+// @keyframes social-our-speakers {
+//     0% {
+//         box-shadow: 0 0 0 0 transparentize(#fff, .5);
+//     }
+//     100% {
+//         box-shadow: 0 0 0 20px transparent;
+//     }
+// }
+
+
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1600px) {
+	.our-speakers__item {
+		width: 25%;
+	}
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1232px) {
+	.our-speakers__item {
+		width: 33.3%;
+	}
+	.our-speakers__advantages-item-title {
+        small {
+
+            font-size: 24px;
+        }
+        b {
+            font-size: 54px;
+        }
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.our-speakers__advantages {
+        flex-wrap: wrap;
+    }
+    .our-speakers__advantages-item {
+        width: 50%;
+    }
+	.our-speakers__advantages-item-title {
+        small {
+            font-size: 30px;
+        }
+        b {
+            font-size: 70px;
+        }
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	.our-speakers__item {
+		width: 50%;
+	}
+	.our-speakers__advantages-item-title {
+        small {
+
+            font-size: 24px;
+        }
+        b {
+            font-size: 54px;
+        }
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.our-speakers__item {
+		width: 100%;
+	}
+	.our-speakers__advantages-item {
+        padding: 0 20px;
+        width: 100%;
+    }
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	/**/
+}
